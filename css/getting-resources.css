@@ -1,0 +1,119 @@
+body {
+  background-image: url("/images2/background_pokiman.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Header (bra forståelig, trenger ikke endres mer på) */
+.nav {
+  background-color: #333f1f;
+  padding: 10px;
+  text-align: right;
+  height: 50px;
+}
+
+.nav > ul > li {
+  list-style: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+li > a {
+  color: white;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-family: "Cinzel", serif;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+#resources {
+  display: grid; /* Bruk grid for layout */
+  grid-template-columns: repeat(3, 1fr); /* Tre kolonner med lik bredde */
+  gap: 20px; /*mellom rom mellom boxene inne i boxen*/
+  padding: 12px; /* Padding rundt hele boxen */
+  width: 50%; /* bestemmer størrelsen på grid boksen */
+  margin-left: 40px; /*gjør at boksen kommer 40px unna venstre side*/
+  text-align: center; /*Sentrerer teksten*/
+  font-family: "Cinzel", serif; /* Font familie */
+}
+
+.resourceItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.resourceIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.pictures {
+  align-items: centers;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* To kolonner med lik bredde */
+}
+
+#mineBtn,
+#woodsBtn {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+/* Muse pekern som edres til øks/hakke */
+#woodsBtn:hover {
+  cursor: url("../images/axe-cursor.png"), auto; /* Øks-bildet som cursor */
+}
+
+#mineBtn:hover {
+  cursor: url("../images/pickaxe-cursor.png"), auto; /* Pickaxe-bildet som cursor */
+}
+
+@media (width < 768px) {
+  /*Hvis den er mindre en 768*/
+  .pictures {
+    grid-template-columns: repeat(1, 1fr);
+
+    align-items: center;
+  }
+  #resources {
+    grid-template-columns: 1fr;
+  }
+  main {
+    overflow-x: hidden;
+  }
+}
+
+@media (width < 548px) {
+  /*Hvis den er mindre en 768*/
+  .nav-links {
+    margin-top: -8px;
+  }
+}

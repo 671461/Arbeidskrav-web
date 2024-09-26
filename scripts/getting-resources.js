@@ -37,10 +37,9 @@ updateResources();
 mineBtn.addEventListener("click", () => {
   const random = Math.random();
   if (random < 0.25) {
-    //Sier at hvis den er under 25 generer den gull hvis over generer den metall
-    gold += Math.floor(Math.random() * 5) + 1; //Generer tilfeldig menge mellom 5 og 1
+    gold += Math.floor(Math.random() * 10) + 1;
   } else {
-    metal += Math.floor(Math.random() * 10) + 1; //Gennererer tilfeldig mengde mellom 10 og 1
+    metal += Math.floor(Math.random() * 10) + 1;
   }
   updateResources();
 });

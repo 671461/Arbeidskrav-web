@@ -1,5 +1,5 @@
 body {
-  background-image: url("/images2/background_pokiman.jpg");
+  background-image: url("/images/background_pokiman.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,7 +15,6 @@ main {
   overflow-x: hidden;
 }
 
-/* Header (bra forståelig, trenger ikke endres mer på) */
 .nav {
   background-color: #333f1f;
   padding: 10px;
@@ -42,7 +41,7 @@ li > a {
   text-decoration: none;
   margin: 0 15px;
   font-size: 18px;
-  font-family: "Cinzel", serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .nav a:hover {
@@ -50,14 +49,15 @@ li > a {
 }
 
 #resources {
-  display: grid; /* Bruk grid for layout */
-  grid-template-columns: repeat(3, 1fr); /* Tre kolonner med lik bredde */
-  gap: 20px; /*mellom rom mellom boxene inne i boxen*/
-  padding: 12px; /* Padding rundt hele boxen */
-  width: 50%; /* bestemmer størrelsen på grid boksen */
-  margin-left: 40px; /*gjør at boksen kommer 40px unna venstre side*/
-  text-align: center; /*Sentrerer teksten*/
-  font-family: "Cinzel", serif; /* Font familie */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 12px;
+  width: 50%;
+  margin-left: 40px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  padding-top: 30px;
 }
 
 .resourceItem {
@@ -76,7 +76,8 @@ li > a {
   justify-content: center;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* To kolonner med lik bredde */
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 50px;
 }
 
 #mineBtn,
@@ -89,15 +90,14 @@ li > a {
 
 /* Muse pekern som edres til øks/hakke */
 #woodsBtn:hover {
-  cursor: url("../images/axe-cursor.png"), auto; /* Øks-bildet som cursor */
+  cursor: url("../images/axe-cursor.png"), auto;
 }
 
 #mineBtn:hover {
-  cursor: url("../images/pickaxe-cursor.png"), auto; /* Pickaxe-bildet som cursor */
+  cursor: url("../images/pickaxe-cursor.png"), auto;
 }
 
 @media (width < 768px) {
-  /*Hvis den er mindre en 768*/
   .pictures {
     grid-template-columns: repeat(1, 1fr);
 
@@ -112,7 +112,6 @@ li > a {
 }
 
 @media (width < 548px) {
-  /*Hvis den er mindre en 768*/
   .nav-links {
     margin-top: -8px;
   }

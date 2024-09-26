@@ -47,7 +47,7 @@ li > a {
 .nav a:hover {
   text-decoration: underline;
 }
-
+/*section for icons*/
 #resources {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -60,17 +60,20 @@ li > a {
   padding-top: 30px;
 }
 
+/* div where ech icon is inside*/
 .resourceItem {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
+/*icon picture*/
 .resourceIcon {
   width: 60px;
   height: 60px;
 }
 
+/*The section where the pictures of wood and mine are inside*/
 .pictures {
   align-items: centers;
   justify-content: center;
@@ -80,6 +83,7 @@ li > a {
   padding-top: 50px;
 }
 
+/*the pictures that is clicble*/
 #mineBtn,
 #woodsBtn {
   width: 95%;
@@ -88,7 +92,7 @@ li > a {
   border-radius: 50px;
 }
 
-/* Muse pekern som edres til øks/hakke */
+/* cursur for axe and pickaxe */
 #woodsBtn:hover {
   cursor: url("../images/axe-cursor.png"), auto;
 }
@@ -97,6 +101,7 @@ li > a {
   cursor: url("../images/pickaxe-cursor.png"), auto;
 }
 
+/*For smalller screen size then 768px*/
 @media (width < 768px) {
   .pictures {
     grid-template-columns: repeat(1, 1fr);
@@ -111,6 +116,7 @@ li > a {
   }
 }
 
+/*This is for smaler than 548px screen size*/
 @media (width < 548px) {
   .nav-links {
     margin-top: -8px;

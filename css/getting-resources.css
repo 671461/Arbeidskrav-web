@@ -1,4 +1,5 @@
 body {
+  /*background picture*/
   background-image: url("/images/background.jpg");
   background-size: cover;
   background-position: center;
@@ -10,11 +11,7 @@ body {
   box-sizing: border-box;
 }
 
-main {
-  width: 100%;
-  overflow-x: hidden;
-}
-
+/*Navigation menu*/
 .nav {
   background-color: #333f1f;
   padding: 10px;
